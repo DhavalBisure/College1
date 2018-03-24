@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/colorPrimaryDark">
+
+    <TextView
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="#FDEFDE"
+        android:text="WHO ARE YOU?"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+
+        android:hint="Email"
+        android:id="@+id/username"
+        style= "@style/editText_style"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:inputType="textEmailAddress"
+
+        />
+
+
+    <EditText
+        android:hint="Password"
+        android:id="@+id/password"
+        style="@style/editText_style"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:text="LOGIN"
+        style="@style/button_style"
+        android:onClick="onLogin"
+        android:layout_margin="7dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New user? Register here"
+        android:textStyle="italic"
+        android:textColor="#FDEFDE"
+        android:onClick="onText"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:id="@+id/progress"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"/>
+
+</LinearLayout>
